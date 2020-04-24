@@ -1,0 +1,20 @@
+1 logic for theta(logn^2)
+
+Given an integer n, convert n into binary.  the binary repn has log n bits.  Perform n * n in binary; the number of bit-level multiplications and additions incur logn^2
+
+2 logic for n sqrt(n)
+
+Primality check using subtraction as a subroutine (mod operator is expressed as a function of subtraction operator)
+
+Outerloop runs for sqrt(n)
+
+to check 2 divides n; represent 'n' in unary and scan the array linearly.  For every second '1', change it to $ (some special symbol).  At the end, if there are no 1's then 2 divides n, otherwise 2 does not divide n.  this task incurs  theta(n)
+
+to check 3 divides n; rep 'n' in unary and for every third '1', change it to $.  this is also theta(n).
+
+3 implement 3n/2-2 logic in place (without using any additional array)
+
+4 Implement n+logn -2 logic.  If possible, attempt in place implementation
+
+5 Find k smallest elements using quicksort partition routine
+

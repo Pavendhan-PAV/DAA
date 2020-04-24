@@ -1,0 +1,20 @@
+1. Input:   Sorted Arrays; A1,...Ak    Question:  Sort union of A_i 's
+
+Implement the following Logic
+
+L1:  Incremental Design   ;  Sort(A_1,A_2), A_3), A_4,...
+
+L2: Divide and Conquer  ;   Split k arrays into two sets of k/2 each.   Let this be done recursively until set size is 2.   Invoke Sort function in a bottom up fashion.
+
+L3: Maintain k pointers,   Find MIN out of k elements pointed by the pointers and output MIN.  If MIN is in A_i, then move pointer P_i by one cell right.   Continue this process until all elements are visited.
+
+L4: Construct BST on union of A_i 's and perform inorder traversal.
+
+L5: Maintain a heap on k elements pointed by k pointers,  then extract MIN,  If MIN is in A_i, then move pointer P_i by one cell right.  Insert the current element pointed by P_i into Min-heap, continue this process
+
+2. SORTING
+
+a. Create  a random integer array of size 10^6.
+b. Follow divide and conquer strategy (Merge Sort) until the input size is reduced to 10^4.   Recursion bottoms out at this input size.   All leaves of the input reduction tree are approximately 10^4.
+c. Perform Insertion sort at each leaf node
+d. In a bottom up fashion combine the solutions using Merge Sort MERGE routine.

@@ -1,0 +1,7 @@
+1. Discover three different logic for GCD(m,n)
+
+2. For each logic, write an iterative code and recursive code in C
+
+3. Any one logic, you may generalize: GCD(n1,n2,...nk) for a fixed integer k.  Again iterative and recursive code
+
+4. Identify two good applications of GCD

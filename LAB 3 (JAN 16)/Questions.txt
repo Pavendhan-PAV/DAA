@@ -1,0 +1,7 @@
+1. Given a ternary array (filled with 0,1,2) of size 'n'.   Arrange them in non-decreasing order preserving stability (for elements with multiplicity, their order of appearance must be preserved in the output array).
+
+ex: 2 0 1 1 0 0 2  --in the final array, 0 0 0 1 1 2 2 ; the first '2' of the input array must appear before the second '2'.   
+
+Present three diff logic.   Can this be done in theta(n) time.
+
+2. Given an integer array; partition it into two of equal size such that their sum is maximum.   That is A is partitioned into A1 and A2 of equal size such that sum of the elements in A1 is maximum and sum of the elements in A2 is maximum.
